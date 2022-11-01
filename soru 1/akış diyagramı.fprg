@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Acer"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-31 04:01:01 &#214;S"/>
+        <attribute name="created" value="QWNlcjtERVNLVE9QLUJIUDQ2UjM7MjAyMi0xMC0zMTswMzo1NDo0NCDDllM7MjgzNA=="/>
+        <attribute name="edited" value="QWNlcjtERVNLVE9QLUJIUDQ2UjM7MjAyMi0xMC0zMTswNDowMTowMSDDllM7MTsyOTI4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c" type="Integer" array="False" size=""/>
+            <assign variable="b" expression="0"/>
+            <output expression="&quot;de&#287;er giriniz:&quot;" newline="True"/>
+            <input variable="c"/>
+            <assign variable="c" expression="c-1"/>
+            <for variable="a" start="1" end="c" direction="inc" step="1">
+                <if expression="a%3==0">
+                    <then>
+                        <assign variable="b" expression="b+a"/>
+                    </then>
+                    <else>
+                        <if expression="a%5==0">
+                            <then>
+                                <assign variable="b" expression="b+a"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </else>
+                </if>
+            </for>
+            <output expression="b" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

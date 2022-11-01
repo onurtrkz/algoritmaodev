@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Acer"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-31 04:05:13 &#214;S"/>
+        <attribute name="created" value="QWNlcjtERVNLVE9QLUJIUDQ2UjM7MjAyMi0xMC0zMTswNDowMToyMiDDllM7MjgyMw=="/>
+        <attribute name="edited" value="QWNlcjtERVNLVE9QLUJIUDQ2UjM7MjAyMi0xMC0zMTswNDowNToxMyDDllM7MTsyOTM1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, i" type="Integer" array="False" size=""/>
+            <assign variable="a" expression="0"/>
+            <assign variable="b" expression="0"/>
+            <for variable="i" start="0" end="100" direction="inc" step="1">
+                <assign variable="a" expression="a+i*i"/>
+                <assign variable="b" expression="b+i"/>
+            </for>
+            <assign variable="b" expression="b*b"/>
+            <output expression="b-a" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
